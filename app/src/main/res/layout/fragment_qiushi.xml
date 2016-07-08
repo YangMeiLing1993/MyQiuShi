@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo2.com.qf.com.myqiushi.MainActivity"
+    >
+
+
+        <!-- 导航栏 -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBeijing">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+        <RadioGroup
+            android:id="@+id/rg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_js_id"
+                style="@style/radiobuttonStyle"
+                android:checked="true"
+                android:text="@string/zhuanxiang"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_kj_id"
+                style="@style/radiobuttonStyle"
+                android:text="@string/shipin" />
+
+            <RadioButton
+                android:id="@+id/rb_yl_id"
+                style="@style/radiobuttonStyle"
+                android:text="@string/chunwen"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/rb_sh_id"
+                style="@style/radiobuttonStyle"
+                android:text="@string/chuntu"
+                />
+        </RadioGroup>
+    </HorizontalScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/group_create"/>
+</LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

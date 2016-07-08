@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">糗事百科</string>
+    <string name="qiushi">糗事</string>
+    <string name="qiuyou">糗友</string>
+    <string name="zhibo">直播</string>
+    <string name="xiaozhitiao">小纸条</string>
+    <string name="mine">我</string>
+    <string name="chuntu">纯图</string>
+    <string name="chunwen">纯文</string>
+    <string name="shipin">视频</string>
+    <string name="zhuanxiang">专享</string>
+    <string name="gebi">隔壁</string>
+    <string name="yifen">已粉</string>
+    <string name="fshipin">视频</string>
+    <string name="huati">话题</string>
+</resources>

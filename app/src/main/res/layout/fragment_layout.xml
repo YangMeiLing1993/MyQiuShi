@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:id="@+id/tv_description_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="您点击了第1个书签"
+        android:textColor="#FFFFFF" />
+
+    <!-- @android:id/list,使用系统内置的id，该id值是ListFragment,或者是ListActivity,内嵌的ListView，id都是它 -->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_description_id" />
+
+    <!-- @android:id/empty,使用系统内置的id，与系统内置的ListView集合在一起使用，当ListView没有数据，自动使用该视图替换ListView -->
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂时没有数据哦。。。。" />
+
+</RelativeLayout>
